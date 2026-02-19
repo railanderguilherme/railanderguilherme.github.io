@@ -1,10 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Railander - Portfólio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railander Guilherme | Data & Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        header {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-top: 15px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .card {
+            background: #1e293b;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); }
+        h2 {
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+        ul { list-style: none; }
+        ul li {
+            margin-bottom: 8px;
+            color: #cbd5e1;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .skill {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid #334155;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            background: #38bdf8;
+            color: #0f172a;
+            transition: background 0.3s ease;
+        }
+        .btn:hover { background: #0ea5e9; }
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+    </style>
 </head>
 <body>
-    <h1>Olá, eu sou Railander 👋</h1>
-    <p>Desenvolvedor e Analista de Dados</p>
+
+<header>
+    <h1>Railander Guilherme</h1>
+    <p>Data & Software Engineer | Analytics | Machine Learning | Technology Enthusiast</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>👨‍💻 Sobre Mim</h2>
+        <p>
+            Profissional de Tecnologia com mais de 12 anos de experiência em Desenvolvimento de Software, Dados e Gestão de Projetos.
+            Atualmente cursando Ciência da Computação, com forte atuação em análise e modelagem de dados, ETL, Data Warehousing e Business Intelligence.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🚀 Especialidades</h2>
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">ETL & Data Warehouse</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">PowerApps</div>
+            <div class="skill">React</div>
+            <div class="skill">Ruby on Rails</div>
+            <div class="skill">Gestão de Projetos</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>📊 Objetivo</h2>
+        <p>
+            Construir soluções inteligentes orientadas a dados, explorando Machine Learning, Engenharia de Dados
+            e Desenvolvimento de Software moderno.
+        </p>
+    </div>
+
+    <div class="cta">
+        <a class="btn" href="https://github.com/" target="_blank">Ver meus projetos</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Railander Guilherme • Construído com GitHub Pages
+</footer>
+
 </body>
 </html>
